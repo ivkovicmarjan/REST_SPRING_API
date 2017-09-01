@@ -1,13 +1,16 @@
 package ch.praesentation.model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Content {
 
     private int id;
     private double price;
-    private String produktContent;
+    private String produkt_content;
     private String title;
     private String utitle;
 
@@ -16,7 +19,6 @@ public class Content {
     public int getId() {
         return id;
     }
-
 
     public Content(){
     }
@@ -33,12 +35,13 @@ public class Content {
         this.price = price;
     }
 
-    public String getProduktContent() {
-        return produktContent;
+    public String getProdukt_content() {
+        return produkt_content;
+
     }
 
-    public void setProduktContent(String produktContent) {
-        this.produktContent = produktContent;
+    public void setProdukt_content(String produkt_content) {
+        this.produkt_content = produkt_content;
     }
 
     public String getTitle() {
