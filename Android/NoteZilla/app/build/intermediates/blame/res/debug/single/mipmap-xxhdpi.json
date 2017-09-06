@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\b7hafnb\\Desktop\\NoteZillaGit\\Android\\NoteZilla\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\b7hafnb\\Desktop\\NoteZillaGit\\Android\\NoteZilla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\b7hafnb\\Desktop\\proj\\NoteZilla\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\b7hafnb\\Desktop\\proj\\NoteZilla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\b7hafnb\\Desktop\\proj\\NoteZilla\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\b7hafnb\\Desktop\\proj\\NoteZilla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\b7hafnb\\Desktop\\NoteZillaGit\\Android\\NoteZilla\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\b7hafnb\\Desktop\\NoteZillaGit\\Android\\NoteZilla\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    }
+]
