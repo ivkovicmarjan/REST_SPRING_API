@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class DetailView extends AppCompatActivity {
     private EditText titel;
+    private EditText contend;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,7 @@ public class DetailView extends AppCompatActivity {
         makeLogoutButton();
         makeSaveButton();
         titel = (EditText) findViewById(R.id.titel);
+        contend = (EditText) findViewById(R.id.contend);
 
         reviceData();
     }
@@ -25,7 +27,15 @@ public class DetailView extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(Overview.TITEL);
 
-        titel.setText(message);
+        if(message != null) {
+            titel.setText(message);
+            contend.setText(getContendFromServer());
+        };
+    }
+
+    private String getContendFromServer() {
+        //TODO
+        return null;
     }
 
     private void makeLogoutButton() {
@@ -44,7 +54,12 @@ public class DetailView extends AppCompatActivity {
             public void onClick(View v) {
                 Intent overview = new Intent(DetailView.this, Overview.class);
                 DetailView.this.startActivity(overview);
+                saveNoteInServer();
             }
         });
+    }
+
+    private void saveNoteInServer() {
+        //TODO
     }
 }

@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class Overview extends AppCompatActivity {
     private ListView list;
@@ -49,37 +47,25 @@ public class Overview extends AppCompatActivity {
     }
 
     private void updateList(){
-        String[] contend = getTitlesFromServer();
-        contend = new String[] {
-                "Shopping",
-                "Bucktedlist",
-                "Buissnes",
-                "Blacklist",
-                "Shopping",
-                "Bucktedlist",
-                "Buissnes",
-                "Blacklist",
-                "Shopping",
-                "Bucktedlist",
-                "Buissnes",
-                "Blacklist",
-                "Shopping",
-                "Bucktedlist",
-                "Buissnes",
-                "Blacklist",
-                "Passwords"
-        };
-        final List<String>contend_list = new ArrayList<String>(Arrays.asList(contend));
+        ArrayList<String> contend = getTitlesFromServer();
+        contend.add("Shopping");
+        contend.add("Buissnes");
+        contend.add("Bucktedlist");
+        contend.add("Blacklist");
+        contend.add("Passwords");
 
-        final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1, contend_list);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_list_item_1, contend);
 
         list.setAdapter(arrayAdapter);
     }
 
-    private String[] getTitlesFromServer(){
-        //TODO
-        return null;
+    private ArrayList<String> getTitlesFromServer(){
+        ArrayList<String> message = new ArrayList<>();
+
+        message.add(Connection.getServerMessage("/contents"));
+
+        return message;
     }
 
     private void makeCreateButton() {
