@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/praesentation.iml" filepath="$PROJECT_DIR$/praesentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notezilla.iml" filepath="$PROJECT_DIR$/Notezilla.iml" />
     </modules>
   </component>
 </project>
